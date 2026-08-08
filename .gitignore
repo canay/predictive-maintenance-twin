@@ -1,0 +1,14 @@
+# Third-party benchmark data is not redistributed; see README for sources.
+data/
+*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local logs and scratch
+logs/
+tmp/
+*.log

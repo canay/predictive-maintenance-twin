@@ -1,0 +1,222 @@
+{
+  "run_id": "2026-06-14_codex_vps_cmapss_external_validation",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-06-14",
+  "tool": "codex",
+  "location": "vps",
+  "run_slug": "cmapss_external_validation",
+  "status": "✅ aktif external C-MAPSS prognostic/RUL kanıtı; policy/gate validation değildir",
+  "integration_status": "integrated_active_external_rul_evidence",
+  "interpretation": "Linux VPS run; local folder already preserves manifest, 48 benchmark rows, predictions, resource report, and logs. It supports only external temporal RUL/prognostic scope.",
+  "next_resume_action": "Do not use C-MAPSS as plant-level validation of the maintenance policy or TreeSHAP gate.",
+  "source_file_count": 63,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/cmapss_external_vps_20260614_121237/benchmark_results.csv": {
+      "rows": 48
+    },
+    "results/cmapss_external_vps_20260614_121237/best_by_dataset.csv": {
+      "rows": 4
+    },
+    "results/cmapss_external_vps_20260614_121237/data_manifest.json": {
+      "json_keys": [
+        "source_url",
+        "zip_path",
+        "extract_dir",
+        "downloaded",
+        "zip_md5"
+      ]
+    },
+    "results/cmapss_external_vps_20260614_121237/dataset_summary.csv": {
+      "rows": 4
+    },
+    "results/cmapss_external_vps_20260614_121237/metric_summary.csv": {
+      "rows": 16
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_constant_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_constant_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_constant_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_hgb_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_hgb_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_hgb_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_rf_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_rf_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_rf_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_ridge_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_ridge_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD001_ridge_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_constant_seed0.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_constant_seed1.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_constant_seed2.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_hgb_seed0.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_hgb_seed1.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_hgb_seed2.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_rf_seed0.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_rf_seed1.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_rf_seed2.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_ridge_seed0.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_ridge_seed1.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD002_ridge_seed2.csv": {
+      "rows": 259
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_constant_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_constant_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_constant_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_hgb_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_hgb_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_hgb_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_rf_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_rf_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_rf_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_ridge_seed0.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_ridge_seed1.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD003_ridge_seed2.csv": {
+      "rows": 100
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_constant_seed0.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_constant_seed1.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_constant_seed2.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_hgb_seed0.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_hgb_seed1.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_hgb_seed2.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_rf_seed0.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_rf_seed1.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_rf_seed2.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_ridge_seed0.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_ridge_seed1.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/predictions/FD004_ridge_seed2.csv": {
+      "rows": 248
+    },
+    "results/cmapss_external_vps_20260614_121237/resource_report.json": {
+      "json_keys": [
+        "run_id",
+        "created_at",
+        "completed_at",
+        "start",
+        "end",
+        "environment"
+      ]
+    },
+    "results/cmapss_external_vps_20260614_121237/run_manifest.json": {
+      "json_keys": [
+        "run_id",
+        "base_dir",
+        "created_at",
+        "datasets",
+        "models",
+        "seeds",
+        "rul_cap",
+        "n_jobs",
+        "smoke",
+        "source",
+        "resource_start"
+      ]
+    },
+    "results/cmapss_external_vps_20260614_121237/summary.json": {
+      "json_keys": [
+        "run_id",
+        "completed_at",
+        "n_rows",
+        "expected_rows",
+        "datasets",
+        "best_by_dataset",
+        "resource_end"
+      ]
+    }
+  },
+  "vps_note": "Original execution was on VPS; local result/log bundle is preserved under this run folder. No separate live VPS folder was found during 2026-07-08 check."
+}

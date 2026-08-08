@@ -1,0 +1,2162 @@
+{
+  "run_id": "2026-06-14_codex_local_unknown_ai4i_core_risk_rul_shap",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-06-14",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "ai4i_core_risk_rul_shap",
+  "status": "✅ aktif AI4I risk/RUL/TreeSHAP kanıtı",
+  "integration_status": "integrated_active_ai4i_evidence",
+  "interpretation": "AI4I benchmark, calibration, RUL, and attribution layers; C-MAPSS/policy claims should not be inferred from this run alone.",
+  "next_resume_action": "When editing AI4I/result tables, verify against results_summary/stats_extra and code/verify_tex.py.",
+  "source_file_count": 206,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/risk/u_HGB_HDF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_HDF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_HDF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_HDF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_HDF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_Machine_failure_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_Machine_failure_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_Machine_failure_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_Machine_failure_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_Machine_failure_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_OSF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_OSF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_OSF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_OSF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_OSF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_PWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_PWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_PWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_PWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_PWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_RNF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_RNF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_RNF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_RNF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_RNF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_TWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_TWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_TWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_TWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_HGB_TWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_HDF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_HDF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_HDF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_HDF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_HDF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_Machine_failure_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_Machine_failure_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_Machine_failure_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_Machine_failure_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_Machine_failure_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_OSF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_OSF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_OSF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_OSF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_OSF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_PWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_PWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_PWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_PWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_PWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_RNF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_RNF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_RNF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_RNF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_RNF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_TWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_TWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_TWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_TWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_LR_TWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_HDF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_HDF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_HDF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_HDF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_HDF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_Machine_failure_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_Machine_failure_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_Machine_failure_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_Machine_failure_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_Machine_failure_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_OSF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_OSF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_OSF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_OSF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_OSF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_PWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_PWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_PWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_PWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_PWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_RNF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_RNF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_RNF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_RNF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_RNF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_TWF_0.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_TWF_1.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_TWF_2.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_TWF_3.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/risk/u_RF_TWF_4.json": {
+      "json_keys": [
+        "model",
+        "target",
+        "seed",
+        "auroc",
+        "ap",
+        "f1",
+        "ece",
+        "n_pos_test"
+      ]
+    },
+    "results/rul/u2_HGBR_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_HGBR_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_HGBR_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_HGBR_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_HGBR_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_MLP_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_MLP_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_MLP_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_MLP_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u2_MLP_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul/u_HGBR_0.json": {
+      "json_keys": []
+    },
+    "results/rul/u_HGBR_1.json": {
+      "json_keys": []
+    },
+    "results/rul/u_HGBR_2.json": {
+      "json_keys": []
+    },
+    "results/rul/u_HGBR_3.json": {
+      "json_keys": []
+    },
+    "results/rul/u_HGBR_4.json": {
+      "json_keys": []
+    },
+    "results/rul/u_MLP_0.json": {
+      "json_keys": []
+    },
+    "results/rul/u_MLP_1.json": {
+      "json_keys": []
+    },
+    "results/rul/u_MLP_2.json": {
+      "json_keys": []
+    },
+    "results/rul/u_MLP_3.json": {
+      "json_keys": []
+    },
+    "results/rul/u_MLP_4.json": {
+      "json_keys": []
+    },
+    "results/rul_allmodes/u2_HGBR_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_HGBR_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_HGBR_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_HGBR_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_HGBR_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_MLP_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_MLP_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_MLP_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_MLP_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u2_MLP_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "rmse",
+        "mae",
+        "rmse_wear",
+        "mae_wear",
+        "alpha_lambda",
+        "prog_horizon_frac",
+        "ph02_frac"
+      ]
+    },
+    "results/rul_allmodes/u_HGBR_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_HGBR_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_HGBR_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_HGBR_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_HGBR_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_MLP_0.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_MLP_1.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_MLP_2.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_MLP_3.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/rul_allmodes/u_MLP_4.json": {
+      "json_keys": [
+        "model",
+        "seed",
+        "recomputed",
+        "rmse",
+        "mae",
+        "mean_rul_test",
+        "sd_rul_test"
+      ]
+    },
+    "results/shap/p_HDF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_HDF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_HDF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_HDF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_HDF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_OSF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_OSF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_OSF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_OSF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_OSF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_PWF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_PWF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_PWF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_PWF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_PWF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_RNF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_RNF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_RNF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_RNF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_RNF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_TWF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_TWF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_TWF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_TWF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/p_TWF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp_posall",
+        "n"
+      ]
+    },
+    "results/shap/u_HDF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_HDF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_HDF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_HDF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_HDF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_Machine_failure_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_Machine_failure_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_Machine_failure_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_Machine_failure_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_Machine_failure_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_OSF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_OSF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_OSF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_OSF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_OSF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_PWF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_PWF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_PWF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_PWF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_PWF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_RNF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_RNF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_RNF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_RNF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_RNF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_TWF_0.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_TWF_1.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_TWF_2.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_TWF_3.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap/u_TWF_4.json": {
+      "json_keys": [
+        "target",
+        "seed",
+        "imp",
+        "imp_pos",
+        "topk",
+        "gt",
+        "hit_rate",
+        "top3",
+        "n_pos"
+      ]
+    },
+    "results/shap_summary.json": {
+      "json_keys": [
+        "TWF",
+        "HDF",
+        "PWF",
+        "OSF",
+        "RNF",
+        "Machine_failure"
+      ]
+    },
+    "results/stats_extra.json": {
+      "json_keys": [
+        "rul_allmodes",
+        "rul_hgbr_vs_mlp_rmse",
+        "savings_vs_reactive_pct",
+        "prognostic_layer_cost_reduction_pct",
+        "gate_effect",
+        "gate_pass_rates_pe",
+        "gate_pass_rate_mean",
+        "deg_test_episode_len",
+        "policy_eval_episode_len",
+        "risk_rf_vs_hgb_auroc"
+      ]
+    },
+    "results/results_summary.json": {
+      "json_keys": [
+        "risk",
+        "calibration",
+        "sim_params_keys",
+        "mean_wear_increment",
+        "rul",
+        "policy",
+        "shap"
+      ]
+    },
+    "results/sim_params.json": {
+      "json_keys": [
+        "air_mu",
+        "air_rho",
+        "air_sig",
+        "air_sd_stat",
+        "twf_lo",
+        "twf_hi",
+        "inc_vals",
+        "inc_probs",
+        "type_probs"
+      ]
+    },
+    "results/calibration.json": {
+      "json_keys": [
+        "air",
+        "proc",
+        "rpm",
+        "tq",
+        "wear",
+        "failure_rates_per_1000_cycles",
+        "failure_rates_real_per_1000_rows",
+        "any_failure_rate_sim",
+        "any_failure_rate_real",
+        "n_sim_cycles",
+        "n_episodes",
+        "mode_counts_sim",
+        "mode_share_sim",
+        "mode_share_real",
+        "mean_episode_len",
+        "censor_frac",
+        "rule_check"
+      ]
+    },
+    "data/ai4i2020.csv": {
+      "rows": 10000
+    }
+  }
+}

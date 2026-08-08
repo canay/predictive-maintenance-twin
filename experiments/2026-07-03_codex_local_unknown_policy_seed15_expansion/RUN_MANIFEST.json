@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-07-03_codex_local_unknown_policy_seed15_expansion",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-07-03",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "policy_seed15_expansion",
+  "status": "✅ aktif ana policy/gate N=15 seed expansion kanıtı",
+  "integration_status": "integrated_active_policy_seed15_evidence",
+  "interpretation": "Main simulator policy/gate evaluation now uses 15 evaluation pools; saved model seeds 0-4 are reused cyclically. This closes the old N=5 main-policy blocker but does not create plant deployment evidence.",
+  "next_resume_action": "If policy claims are touched, keep N=15 wording and cyclic model-seed design note.",
+  "source_file_count": 23,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/policy_eval.json": {
+      "json_keys": [
+        "selection",
+        "mean_inc",
+        "cost_model",
+        "grids",
+        "per_ratio",
+        "eval_seeds",
+        "model_seed_mapping",
+        "design_note",
+        "tests",
+        "per_ratio_tests"
+      ]
+    },
+    "results/results_summary.json": {
+      "json_keys": [
+        "risk",
+        "calibration",
+        "sim_params_keys",
+        "mean_wear_increment",
+        "rul",
+        "policy",
+        "shap"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "run_id": "2026-07-03_codex_local_unknown_q1_sensitivity_robustness",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-07-03",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "q1_sensitivity_robustness",
+  "status": "✅ aktif sensitivity/robustness guardrail",
+  "integration_status": "integrated_active_sensitivity_guardrail",
+  "interpretation": "Derived controls and robustness comparators; strengthens boundary discipline rather than broad deployment claims.",
+  "next_resume_action": "Use this run before changing RESS/Q1 robustness language.",
+  "source_file_count": 6,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/q1_sensitivity.json": {
+      "json_keys": [
+        "description",
+        "false_thresholds",
+        "controls",
+        "false_threshold_sensitivity",
+        "break_even_burden",
+        "parameter_neighbors",
+        "scenario_note"
+      ]
+    },
+    "results/q1_sensitivity.csv": {
+      "rows": 300
+    },
+    "results/q1_robustness.json": {
+      "json_keys": [
+        "description",
+        "policy_robustness",
+        "candidate_gate_validation",
+        "heldout_ai4i_gate_audit",
+        "cmapss_engine_level_context",
+        "note"
+      ]
+    },
+    "results/q1_robustness.csv": {
+      "rows": 420
+    }
+  }
+}

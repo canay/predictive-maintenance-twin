@@ -1,0 +1,7 @@
+{
+  "source_url": "https://data.nasa.gov/docs/legacy/CMAPSSData.zip",
+  "zip_path": "/home/ubuntu/codex/predictive_maintenance_twin/cmapss_external_20260614_121237/fh8/data/cmapss/CMAPSSData.zip",
+  "extract_dir": "/home/ubuntu/codex/predictive_maintenance_twin/cmapss_external_20260614_121237/fh8/data/cmapss/CMAPSSData",
+  "downloaded": false,
+  "zip_md5": "79a22f36e80606c69d0e9e4da5bb2b7a"
+}

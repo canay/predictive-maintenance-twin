@@ -1,0 +1,231 @@
+{
+ "project_short_name": "predictive_maintenance_twin",
+ "planned_repository": "https://github.com/canay/predictive-maintenance-twin",
+ "repository_status": "local reproducibility package complete; GitHub repository creation/finalization, commit hash, and link test are final submission-time actions; no separate archival DOI is planned unless requested by the journal",
+ "single_author": true,
+ "environment": {
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.12"
+ },
+ "items": [
+  {
+   "artifact": "AI4I risk table and fig_risk",
+   "script": "code/stage0_data.py; code/stage1_risk.py; code/stage7_figs.py",
+   "command": "python code/stage0_data.py; python code/stage1_risk.py; python code/stage7_figs.py",
+   "inputs": "data/ai4i2020.csv",
+   "outputs": "results/risk/*.json; manuscript/fig_risk.png; figures/fig_risk.pdf source/vector export",
+   "seeds": "0,1,2,3,4",
+   "notes": "LR, RF, and HGB 70/30 stratified splits."
+  },
+  {
+   "artifact": "Simulator calibration table and fig_calibration",
+   "script": "code/stage2_calib.py; code/stage7_figs.py",
+   "command": "python code/stage2_calib.py; python code/stage7_figs.py",
+   "inputs": "data/ai4i2020.csv",
+   "outputs": "results/sim_params.json; results/calibration.json; manuscript/fig_calibration.png; figures/fig_calibration.pdf source/vector export",
+   "seeds": "12345",
+   "notes": "600-episode calibration pool."
+  },
+  {
+   "artifact": "RUL prognostic table and fig_rul",
+   "script": "code/stage3_rul.py; code/stage7_figs.py; code/stage9b_stats.py",
+   "command": "python code/stage3_rul.py; python code/stage7_figs.py; python code/stage9b_stats.py",
+   "inputs": "data/pool2_dtr_*.npz; data/pool2_dte_*.npz",
+   "outputs": "results/rul/*.json; results/rul_allmodes/*.json; manuscript/fig_rul.png; figures/fig_rul.pdf source/vector export; results/stats_extra.json",
+   "seeds": "0,1,2,3,4",
+   "notes": "Episode-level split; HGBR and MLP."
+  },
+  {
+   "artifact": "Policy and explanation-gate tables/figures",
+   "script": "code/stage4a_models.py; code/stage4b_gate.py; code/stage4c_policy.py; code/stage7_figs.py; code/stage9b_stats.py",
+   "command": "python code/stage4a_models.py; python code/stage4b_gate.py; python code/stage4c_policy.py; python code/stage7_figs.py; python code/stage9b_stats.py",
+   "inputs": "data/riskrf_*.joblib; data/rulmodel2_HGBR_*.joblib; data/pool2_p*.npz",
+   "outputs": "results/gate_*.npz; results/policy_eval.json; results/stats_extra.json; manuscript/fig_policy.png; manuscript/fig_ablation.png; figures/fig_policy.pdf and figures/fig_ablation.pdf source/vector exports",
+   "seeds": "validation pool 7900; evaluation pools 7000-7014; saved model seeds 0-4 reused cyclically; gate RF seeds 100-102",
+   "notes": "Policy parameter selection and evaluation are separated by pool; seed expansion uses additional simulator pools without retraining risk/RUL models."
+  },
+  {
+   "artifact": "Q1 sensitivity and gate-control analysis",
+   "script": "code/stage10_q1_sensitivity.py",
+   "command": "python code/stage10_q1_sensitivity.py",
+   "inputs": "results/policy_eval.json; results/gate_pe_*.npz; data/pool2_pe_*.npz",
+   "outputs": "results/q1_sensitivity.json; results/q1_sensitivity.csv",
+   "seeds": "7000-7014; random thinning seeds 90000 + 100*ratio + seed",
+   "notes": "Derived controls; no new plant evidence."
+  },
+  {
+   "artifact": "Q1 robustness comparator and candidate-gate validation",
+   "script": "code/stage12_q1_robustness.py",
+   "command": "python code/stage12_q1_robustness.py",
+   "inputs": "results/policy_eval.json; results/gate_pe_*.npz; data/pool2_pe_*.npz; C-MAPSS prediction CSV files",
+   "outputs": "results/q1_robustness.json; results/q1_robustness.csv",
+   "seeds": "evaluation pools 7000-7014; bootstrap seeds fixed inside the script",
+   "notes": "Adds raw-wear, wear-torque, fine periodic, strict-RUL, oracle, candidate-level gate metrics, and C-MAPSS paired context."
+  },
+  {
+   "artifact": "High-wear warm-start sensitivity",
+   "script": "code/stage13_high_wear_sensitivity.py",
+   "command": ".venv-sklearn172/Scripts/python.exe code/stage13_high_wear_sensitivity.py",
+   "inputs": "data/ai4i2020.csv; data/riskrf_*.joblib; data/rulmodel2_HGBR_*.joblib; data/gaterf_*.joblib",
+   "outputs": "results/q1_high_wear_sensitivity.json; results/q1_high_wear_sensitivity.csv",
+   "seeds": "validation pool 17900; evaluation pools 17000-17004; saved model seeds 0-4; gate RF seeds 100-102",
+   "notes": "Warm-starts initial tool wear from the empirical AI4I tool-wear distribution; run in a scikit-learn 1.7.2 venv to match saved model artifacts."
+  },
+  {
+   "artifact": "Model-seed by evaluation-pool-seed audit",
+   "script": "code/stage14_model_seed_audit.py",
+   "command": ".venv-sklearn172/Scripts/python.exe code/stage14_model_seed_audit.py",
+   "inputs": "data/pool2_pe_*.npz; data/riskrf_*.joblib; data/rulmodel2_HGBR_*.joblib; data/gaterf_*.joblib; results/policy_eval.json",
+   "outputs": "results/q1_model_seed_audit.json; results/q1_model_seed_audit.csv",
+   "seeds": "evaluation pools 7000-7014 crossed with saved model seeds 0-4; gate RF seeds 100-102",
+   "notes": "Crosses model and evaluation-pool seeds to check whether the deployed cyclic model/pool mapping drives the policy conclusions."
+  },
+  {
+   "artifact": "Attribution fidelity table and fig_attribution",
+   "script": "code/stage5_shap.py; code/stage5c_pos.py; code/stage5b_agg.py; code/stage7_figs.py",
+   "command": "python code/stage5_shap.py; python code/stage5c_pos.py; python code/stage5b_agg.py; python code/stage7_figs.py",
+   "inputs": "data/ai4i2020.csv",
+   "outputs": "results/shap/*.json; results/shap_summary.json; manuscript/fig_attribution.png; figures/fig_attribution.pdf source/vector export",
+   "seeds": "0,1,2,3,4",
+   "notes": "TreeSHAP audit for per-mode RF classifiers."
+  },
+  {
+   "artifact": "C-MAPSS temporal benchmark comparison",
+   "script": "code/run_cmapss_external_validation.py; code/plot_cmapss_external_validation.py",
+   "command": "python code/run_cmapss_external_validation.py --run-id cmapss_external_20260614_121237; python code/plot_cmapss_external_validation.py --run-id cmapss_external_20260614_121237",
+   "inputs": "data/cmapss/CMAPSSData.zip or NASA URL; official train/test/RUL files",
+   "outputs": "results/cmapss_external_vps_20260614_121237/*.csv/json/jsonl; manuscript/fig_cmapss_external_metrics.png; figures/fig_cmapss_external_metrics.pdf and figures/cmapss_external_vps_20260614_121237/ source exports",
+   "seeds": "0,1,2 for HGBR/RF; deterministic baselines repeated",
+   "notes": "Fixed configurations were evaluated post hoc on official test sets; the local folder preserves manifests and metrics from the Linux VPS run."
+  },
+  {
+   "artifact": "Manuscript numeric consistency check",
+   "script": "code/verify_tex.py",
+   "command": "python code/verify_tex.py",
+   "inputs": "manuscript/SCI-f08-predictive_maintenance_twin.tex; results/*.json",
+   "outputs": "terminal validation log",
+   "seeds": "not applicable",
+   "notes": "Checks manuscript strings against saved result artifacts."
+  }
+ ],
+ "tex_facing_figures": [
+  {
+   "path": "manuscript/fig_architecture.pdf",
+   "exists": true,
+   "sha256": "c5e8475ade9409e831ca23d844ecc47c47631bdfe3c55ffa065f86ae2c9d613a",
+   "bytes": 26142
+  },
+  {
+   "path": "manuscript/fig_risk.png",
+   "exists": true,
+   "sha256": "2664a6ccf8325fc7c7c5e37332ddab4cc2db7749e4a6b351a6c7a740cc1e0c49",
+   "bytes": 197811
+  },
+  {
+   "path": "manuscript/fig_calibration.png",
+   "exists": true,
+   "sha256": "9d9fb27f380c84b39dd206350912b8600ab397a5675495a0c25c72b19b8a3765",
+   "bytes": 150707
+  },
+  {
+   "path": "manuscript/fig_rul.png",
+   "exists": true,
+   "sha256": "f02a7c71e4038dfd635306f8f9233b5aa810ec9a31764694ab862341146b93b8",
+   "bytes": 330220
+  },
+  {
+   "path": "manuscript/fig_cmapss_external_metrics.png",
+   "exists": true,
+   "sha256": "a78b9808f07488f072f046a54800eb00838a526de524beb2c1f9963e835ee5b0",
+   "bytes": 147165
+  },
+  {
+   "path": "manuscript/fig_policy.png",
+   "exists": true,
+   "sha256": "f324450db15b5c38dd91f5296bdd0821335eea3155ddca8f324f3387b80c892e",
+   "bytes": 144676
+  },
+  {
+   "path": "manuscript/fig_ablation.png",
+   "exists": true,
+   "sha256": "39cabc45b0c345bba6da67a219ad5cfbc164d2ca71e592c639690b6159fb3558",
+   "bytes": 103569
+  },
+  {
+   "path": "manuscript/fig_attribution.png",
+   "exists": true,
+   "sha256": "f6e83c25617a4f698db134737870498e45fda7c22c044776944a6908e2d6a879",
+   "bytes": 156571
+  }
+ ],
+ "figure_source_output_layout": {
+  "tex_facing_outputs": "The TeX uses manuscript/fig_architecture.pdf for the text-bearing diagram and manuscript/fig_*.png for the remaining figures.",
+  "source_vector_exports": "figures/fig_*.pdf and figures/cmapss_external_vps_20260614_121237/ are source/export assets kept near, but separate from, the TeX-facing outputs.",
+  "archived_old_png_duplicates": "archive/2026-07-08_release_provenance_cleanup/stale_root_figures/ and archive/2026-07-08_release_provenance_cleanup/final_png_duplicates_in_figures/",
+  "archived_source_pdf_duplicates": "archive/2026-07-08_release_provenance_cleanup/source_pdf_duplicates_in_manuscript/",
+  "cmapss_smoke_figure_dirs": "archive/2026-07-08_release_provenance_cleanup/stale_cmapss_smoke_figures/",
+  "note": "TeX includes figures from manuscript/. Source/vector exports are intentionally retained under figures/."
+ },
+ "figure_source_exports": [
+  {
+   "path": "figures/fig_architecture.pdf",
+   "exists": true,
+   "sha256": "c5e8475ade9409e831ca23d844ecc47c47631bdfe3c55ffa065f86ae2c9d613a",
+   "bytes": 26142
+  },
+  {
+   "path": "figures/fig_risk.pdf",
+   "exists": true,
+   "sha256": "1651227174fd4ff2ea79dfd58683e791398bf6f4d4305b8ac247e0f878bde4c4",
+   "bytes": 21426
+  },
+  {
+   "path": "figures/fig_calibration.pdf",
+   "exists": true,
+   "sha256": "a89617069a319229db7f15f7b180ee9097d470c726ebd81be4f1ccd4c38a7b10",
+   "bytes": 25659
+  },
+  {
+   "path": "figures/fig_rul.pdf",
+   "exists": true,
+   "sha256": "1526cfb1e246a5076bbe5463d893671e591613c5f95d9dc984fe7841282c98dc",
+   "bytes": 25921
+  },
+  {
+   "path": "figures/fig_cmapss_external_metrics.pdf",
+   "exists": true,
+   "sha256": "cf3c3d220dcc0862241298b4ee03cc541351785c06311c7bed2dad77bbd2f0bf",
+   "bytes": 19777
+  },
+  {
+   "path": "figures/fig_policy.pdf",
+   "exists": true,
+   "sha256": "5966b61811c5bf99ea31a324b0795a69014e0afd837c1b23eb1fa31218b103d5",
+   "bytes": 27503
+  },
+  {
+   "path": "figures/fig_ablation.pdf",
+   "exists": true,
+   "sha256": "856d2537fcb79ccf3459347fa6570bbde9c7c169211b602f04cac20d6486a3fd",
+   "bytes": 21457
+  },
+  {
+   "path": "figures/fig_attribution.pdf",
+   "exists": true,
+   "sha256": "65b6082717b99932c16e3f5a327a015717462a4660e43603964a9a8097a8a20b",
+   "bytes": 23009
+  }
+ ],
+ "key_file_hashes": {
+  "manuscript/SCI-f08-predictive_maintenance_twin.tex": "629c1a31b10048870bf312b8d66f2e337eabace186d0bee21c216e863b01d94c",
+  "manuscript/SCI-f08-predictive_maintenance_twin.pdf": "121ff4773ccf2f641222ee8b2af5656d44c72f60a70528cd29808e36c7419a8c",
+  "manuscript/references.bib": "ccd23cb90c168a4e92b5b77394689236acae6f81b728af2e325da18e5fa58a33",
+  "results/policy_eval.json": "3aa637922a57770b6708e144cfa41364d71eae5faacf66a1b1fc5830816c9684",
+  "results/q1_sensitivity.json": "777b5957108046b18daab5da445ac38b5bfdddadb7b2241ced2dff036cd671fe",
+  "results/q1_robustness.json": "94fd1b65c41bbb47a071abfec3c6c66b1459ef58dd456db54ea79659dcca5f99",
+  "results/q1_high_wear_sensitivity.json": "a2aba0a2c66fd7651b36c92b4545c3fa50064d15938b891c9f618d4adecce9fe",
+  "results/q1_model_seed_audit.json": "0f8aa574ffff6b545ac2bc7ecf1273354ce7ad5ee09fab3221ce78605a60f02f",
+  "results/stats_extra.json": "3372930099cf48b163b1c4cd19fcd86bd37f79fb98cbdbe5ed86b3b8312858f0",
+  "results/cmapss_external_vps_20260614_121237/metric_summary.csv": "e704c8f7f982ad43253139babcd19b5b08357f2dc6180da86b0fbfc2d4d2ca32"
+ }
+}

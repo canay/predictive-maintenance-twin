@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-07-08_codex_local_unknown_release_provenance_registry",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-07-08",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "release_provenance_registry",
+  "status": "✅ release/provenance registry and figure-source mapping evidence",
+  "integration_status": "integrated_release_provenance_evidence",
+  "interpretation": "Submission/release provenance layer; G11 still depends on live GitHub URL/link-test and final RESS package QA.",
+  "next_resume_action": "Do not mark G11 passed until public repository/link-test and package QA are complete.",
+  "source_file_count": 11,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/replication_manifest.json": {
+      "json_keys": [
+        "project_short_name",
+        "planned_repository",
+        "repository_status",
+        "single_author",
+        "environment",
+        "items",
+        "tex_facing_figures",
+        "figure_source_output_layout",
+        "figure_source_exports",
+        "key_file_hashes"
+      ]
+    },
+    "results/replication_manifest.csv": {
+      "rows": 11
+    },
+    "MD/05_experiments/ARTIFACT_TO_TABLE_REGISTRY.csv": {
+      "rows": 11
+    }
+  }
+}

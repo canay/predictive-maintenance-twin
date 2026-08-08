@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-07-03_codex_local_unknown_model_seed_audit",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-07-03",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "model_seed_audit",
+  "status": "✅ aktif model-seed by evaluation-pool audit",
+  "integration_status": "integrated_active_model_seed_audit",
+  "interpretation": "Crosses saved model seeds 0-4 with 15 evaluation pools to check cyclic mapping risk.",
+  "next_resume_action": "Read before claiming seed expansion fully independent of saved model artifacts.",
+  "source_file_count": 3,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/q1_model_seed_audit.json": {
+      "json_keys": [
+        "description",
+        "design",
+        "note",
+        "summary"
+      ]
+    },
+    "results/q1_model_seed_audit.csv": {
+      "rows": 1800
+    }
+  }
+}

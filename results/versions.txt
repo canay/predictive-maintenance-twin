@@ -1,0 +1,11 @@
+python 3.12.12
+numpy 2.3.5
+pandas 2.2.3
+sklearn 1.7.2
+scipy 1.17.1
+matplotlib 3.10.8
+shap 0.50.0
+torch 2.10.0
+joblib 1.5.3
+platform Windows-11-10.0.26200-SP0
+dataset OpenML data_id=42890 ai4i2020 (10000 x 14)

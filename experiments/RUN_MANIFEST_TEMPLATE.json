@@ -1,0 +1,7 @@
+{
+  "run_id": "<YYYY-MM-DD>_<tool>_<location>_<run_slug>",
+  "status": "✅/⚠️/❗",
+  "integration_status": "integrated_active_evidence | auxiliary_guardrail | release_provenance | not_integrated_review_required",
+  "interpretation": "Bu koşu makalede ne anlama geliyor?",
+  "next_resume_action": "Sonraki LLM nereden başlamalı?"
+}

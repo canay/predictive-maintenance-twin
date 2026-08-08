@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-26_codex_local_unknown_high_wear_sensitivity",
+  "project_id": "SCI-f08-predictive_maintenance_twin",
+  "makale_kisa_adi": "predictive_maintenance_twin",
+  "date": "2026-06-26",
+  "tool": "codex",
+  "location": "local_unknown",
+  "run_slug": "high_wear_sensitivity",
+  "status": "⚠️ auxiliary five-pool high-wear sensitivity; not main N=15 evidence",
+  "integration_status": "integrated_auxiliary_sensitivity_not_main_policy_claim",
+  "interpretation": "Auxiliary warm-start stress test; should stay secondary and not override main N=15 policy evidence.",
+  "next_resume_action": "If mentioned in manuscript/package, keep auxiliary wording.",
+  "source_file_count": 3,
+  "source_manifest": "legacy_source_manifest.csv",
+  "evidence_snapshot": "evidence/",
+  "code_snapshot": "code_snapshot/",
+  "generated_at": "2026-07-08T16:35:00+03:00",
+  "summary_stats": {
+    "results/q1_high_wear_sensitivity.json": {
+      "json_keys": [
+        "description",
+        "validation_pool",
+        "evaluation_pools",
+        "selection",
+        "by_ratio",
+        "note"
+      ]
+    },
+    "results/q1_high_wear_sensitivity.csv": {
+      "rows": 140
+    }
+  }
+}
