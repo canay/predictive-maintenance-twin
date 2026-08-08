@@ -120,12 +120,15 @@ two of three gate models. Both quantities can be recomputed directly from the
 per-seed arrays in `policy_eval.json` and the raw vote arrays in `gate_pe_*.npz`
 without rerunning any model.
 
+## License
+
+The contents of this repository are released under the MIT License; see
+[`LICENSE`](LICENSE). The third-party benchmark datasets are not covered by it
+and remain under their own terms at their original sources.
+
 ## Status
 
 No archival DOI is minted for this repository unless the journal requests one.
-
-A license has not been declared yet, so default copyright applies. Contact the
-author before reuse.
 
 ## Contact
 
