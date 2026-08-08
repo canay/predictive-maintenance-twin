@@ -34,16 +34,19 @@ rc=S["calibration"]["rule_check"]
 ck("rules_exact", rc["HDF"]==[115,115,115] and rc["OSF"]==[98,98,98] and rc["PWF"]==[95,95,95] and "115/115 HDF, 98/98 OSF, and 95/95 PWF" in tex)
 # risk table rows: regenerate strings and check presence
 def ms(d,f=3): return "%.*f $\\pm$ %.*f"%(f,d["mean"],f,d["sd"])
+# AUROC is printed to four decimals where the mean exceeds 0.99, so that a
+# near-ceiling value is not rounded to 1.000 and read as exact separation.
+def auroc_dp(d): return 4 if d["mean"]>0.99 else 3
 for t in ["Machine failure","TWF","HDF","PWF","OSF","RNF"]:
     for m in ["LR","RF","HGB"]:
         d=S["risk"][m][t]
-        row="%s & %s & %s & %s & %s"%(m,ms(d["auroc"]),ms(d["ap"]),ms(d["f1"]),ms(d["ece"]))
+        row="%s & %s & %s & %s & %s"%(m,ms(d["auroc"],auroc_dp(d["auroc"])),ms(d["ap"]),ms(d["f1"]),ms(d["ece"]))
         ck("riskrow_%s_%s"%(m,t.replace(' ','_')), row in tex)
 # risk text claims
 r=S["risk"]
 ck("rf_mf", near(r["RF"]["Machine failure"]["auroc"]["mean"],0.972,5e-4) and near(r["RF"]["Machine failure"]["ap"]["mean"],0.762,5e-4) and near(r["RF"]["Machine failure"]["ece"]["mean"],0.013,5e-4))
 ck("hgb_hdf", near(r["HGB"]["HDF"]["auroc"]["mean"],0.9995,5e-5))
-ck("hgb_pwf", near(r["HGB"]["PWF"]["auroc"]["mean"],0.998,5e-4))
+ck("hgb_pwf", near(r["HGB"]["PWF"]["auroc"]["mean"],0.9977,5e-5))
 ck("lr_osf", near(r["LR"]["OSF"]["auroc"]["mean"],0.9996,5e-5))
 ck("lr_twf", near(r["LR"]["TWF"]["auroc"]["mean"],0.968,5e-4))
 ck("twf_ap_lt_015", max(r[m]["TWF"]["ap"]["mean"] for m in r)<0.15)
