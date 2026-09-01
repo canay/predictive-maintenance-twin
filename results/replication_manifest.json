@@ -1,7 +1,9 @@
 {
  "project_short_name": "predictive_maintenance_twin",
  "planned_repository": "https://github.com/canay/predictive-maintenance-twin",
- "repository_status": "local reproducibility package complete; GitHub repository creation/finalization, commit hash, and link test are final submission-time actions; no separate archival DOI is planned unless requested by the journal",
+ "repository_status": "public repository is live and link-tested; the current evaluator-correction and four-class verification records remain local and are not release-authorized",
+ "repository_head_verified": "44a30567f7c416de8b63051b3706fb089b2a90fd",
+ "repository_status_observed_at": "2026-08-31T22:34:48+03:00",
  "single_author": true,
  "environment": {
   "platform": "Windows-11-10.0.26200-SP0",

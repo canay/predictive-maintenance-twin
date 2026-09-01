@@ -10,13 +10,13 @@ Stage move yapılmadı. `PROJECT_STATE.json` içinde G10 durumu değiştirilmedi
 
 ## Files Read
 
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\RUN.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\START.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\PIPELINE.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\STATE_AND_HANDOFF.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\STUDY_DESIGN_AND_EXPERIMENTS.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\FIGURE_TABLE_VISUAL_QA.md`
-- `C:\DOCS\AKADEMIK\AkademikAkisMerkezi\Akis1_AnaPipeline\REPRODUCIBILITY_AND_ARTIFACTS.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\RUN.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\START.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\PIPELINE.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\STATE_AND_HANDOFF.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\STUDY_DESIGN_AND_EXPERIMENTS.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\FIGURE_TABLE_VISUAL_QA.md`
+- `<controlled-workspace>\AkademikAkisMerkezi\Akis1_AnaPipeline\REPRODUCIBILITY_AND_ARTIFACTS.md`
 - `MD/_state/PROJECT_STATE.json`
 - `MD/_state/HANDOFF.md`
 - `MD/_state/QUALITY_LEDGER.md`

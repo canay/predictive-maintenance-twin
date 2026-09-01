@@ -113,7 +113,7 @@
   ],
   "resource_end": {
     "timestamp": "2026-06-14T12:38:07+03:00",
-    "host": "instance-20260404-2117",
+    "host": "Oracle ARM VPS (pseudonymized)",
     "platform": "Linux-6.17.0-1016-oracle-aarch64-with-glibc2.39",
     "python": "3.12.3",
     "cpu_count": 4,

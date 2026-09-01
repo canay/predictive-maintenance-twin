@@ -1,6 +1,6 @@
 {
   "run_id": "cmapss_external_20260614_121237",
-  "base_dir": "/home/ubuntu/codex/predictive_maintenance_twin/cmapss_external_20260614_121237/fh8",
+  "base_dir": "<controlled-workspace>/codex/predictive_maintenance_twin/cmapss_external_20260614_121237/fh8",
   "created_at": "2026-06-14T12:13:21+03:00",
   "datasets": [
     "FD001",
@@ -29,7 +29,7 @@
   },
   "resource_start": {
     "timestamp": "2026-06-14T12:13:21+03:00",
-    "host": "instance-20260404-2117",
+    "host": "Oracle ARM VPS (pseudonymized)",
     "platform": "Linux-6.17.0-1016-oracle-aarch64-with-glibc2.39",
     "python": "3.12.3",
     "cpu_count": 4,
